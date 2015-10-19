@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <meta charset="UTF-8">
+  <title>Colors</title>
+  <link href="css/main.css" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/angular.js"></script>
+  <style>
+  body{
+    font: sans-serif;
+    padding:0;
+    margin:0;
+    background:deepskyblue;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  a{
+    text-decoration:none;
+    outline:none;
+  }
+  input#color{
+    font-weight:100;
+    border:none;
+    background:none;
+    position:fixed;
+    color: #fbfbfb;
+    padding:0px 20px;
+    top:35%;
+    text-align:left;
+    border-left: solid 15px #fbfbfb;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 72px;
+    width:100%;
+  }
+
+  </style>
+</head>
+<body>
+  <div ng-controller="ctrl">
+  <!--  <input type="text" ng-model="number"/>'s square is {{square}}
+    <br /> -->
+    <input id="color" type="text" ng-model="color" placeholder="enter a color"/>
+  </div>
+  <div style="position:fixed; padding:20px; bottom:0; right:0; font: 16px sans-serif;">
+    <a href ="http://www.w3schools.com/html/html_colornames.asp" target="blank" style="color: rgba(255,255,255,.7);">"Colors" by Sharath Panchagnula.</a>
+  </div>
+<script type="text/javascript" src="js/sharath.js"></script>
+</body>
+</html>
